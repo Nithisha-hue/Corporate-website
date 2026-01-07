@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zennia | Digital Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts (ADD THIS) -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">ZENNIA</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Subpage 1</a></li>
+            <li><a class="dropdown-item" href="#">Subpage 2</a></li>
+            <li><a class="dropdown-item" href="#">Subpage 3</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1>Better Solutions For Your Business</h1>
+        <p>We are a team of talented designers making websites with Bootstrap</p>
+        <a href="#about" class="btn-main me-2">Get Started</a>
+        <a href="#" class="btn btn-outline-light"><i class="bi bi-play-circle"></i> Watch Video</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="floating pic.png" class="img-fluid" alt="Illustration">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brand Carousel Section -->
+<section class="py-5 bg-light">
+  <div class="brand-carousel">
+    <div class="brand-track">
+      <img src="HSBC.jpg" class="brand" alt="HSBC">
+      <img src="lexmark.jpg" class="brand" alt="Lexmark">
+      <img src="walmart.jpg" class="brand" alt="Walmart">
+      <img src="signifyhealth.jpg" class="brand" alt="SignifyHealth">
+      <img src="tomtom.jpg" class="brand" alt="TomTom">
+      <img src="viatris.jpg" class="brand" alt="Viatris">
+
+      <!-- Duplicate for seamless looping -->
+      <img src="HSBC.jpg" class="brand" alt="HSBC">
+      <img src="lexmark.jpg" class="brand" alt="Lexmark">
+      <img src="walmart.jpg" class="brand" alt="Walmart">
+      <img src="signifyhealth.jpg" class="brand" alt="SignifyHealth">
+      <img src="tomtom.jpg" class="brand" alt="TomTom">
+      <img src="viatris.jpg" class="brand" alt="Viatris">
+    </div>
+  </div>
+</section>
+
+<!-- About Section with Accordion -->
+<section class="py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2>The division of work itself <strong>driven by strategy and calrity.</strong></h2>
+        <p>We deliver well structured solutions that combine efficiency, clarity and measurable results for modern businesses.</p>
+        <div class="accordion" id="aboutAccordion">
+          <div class="accordion-item mb-3 shadow-sm">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">01 How does this service align with your business</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">Affordable pricing with guaranteed quality. Timely delivery supported by a smooth, well-managed process.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 shadow-sm">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">02 How do we maintain consistency and excellence in every project?</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">Our approach focuses on precision, strength, and dependable results across every project.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 shadow-sm">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">03 How can our services help your organization grow?</button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">We follow a refined process that guarantees efficiency, accuracy, and dependable performance.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="2ndimage.png" class="img-fluid" alt="Illustration">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section class="py-5" id="skills">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center">
+        <img src="3rdimage.png" class="img-fluid" alt="Skills Illustration">
+      </div>
+      <div class="col-lg-6">
+        <h2>Our work is driven by quality, integrity, and a commitment to excellence.</h2>
+        <p>Our team delivers innovative and scalable solutions designed for long-term success.</p>
+        <div class="skill">
+          <p>HTML <span class="skill-percent">100%</span></p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
+        </div>
+        <div class="skill">
+          <p>CSS <span class="skill-percent">90%</span></p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <p>JavaScript <span class="skill-percent">75%</span></p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill">
+          <p>Photoshop <span class="skill-percent">55%</span></p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 55%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section class="py-5 bg-light" id="services">
+  <div class="container">
+    <div class="section-title"><h2>Services</h2></div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-box text-center">
+          <i class="bi bi-laptop fs-1 service-icon"></i>
+          <h5 class="mt-3">Web Design</h5>
+          <p>Modern and responsive layouts.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box text-center">
+         <i class="bi bi-code-slash fs-1 service-icon"></i>
+          <h5 class="mt-3">Development</h5>
+          <p>Fast and scalable solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box text-center">
+          <i class="bi bi-bar-chart fs-1 service-icon"></i>
+          <h5 class="mt-3">Marketing</h5>
+          <p>Boost your online presence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="work-process py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">WORK PROCESS</h2>
+      <p class="text-muted">Our approach is driven by your needs, ensuring effective and reliable outcomes.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4">
+        <div class="process-card">
+          <img src="workprogress1.jpg" class="process-img" />
+
+          <div class="step-badge">01</div>
+
+          <h4>Research & Analysis</h4>
+          <p>
+           For no one truly loves pleasure itself, because it can be unpleasant, or hates it, or flees from it.
+          </p>
+
+          <ul class="process-list">
+            <li>Market Research</li>
+            <li>Data Analysis</li>
+            <li>User Feedback</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4">
+        <div class="process-card">
+          <img src="workprogress2.jpg" class="process-img" />
+
+          <div class="step-badge">02</div>
+
+          <h4>Design & Planning</h4>
+          <p>
+           Who among us would engage in any effort for minimal benefit?
+          </p>
+
+          <ul class="process-list">
+            <li>Wireframing</li>
+            <li>UI / UX Design</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4">
+        <div class="process-card">
+          <img src="workprogress3.jpg" class="process-img" />
+
+          <div class="step-badge">03</div>
+
+          <h4>Development & Launch</h4>
+          <p>
+            And indeed, the distinction of these things is easy and straightforward.
+          </p>
+
+          <ul class="process-list">
+            <li>Development</li>
+            <li>Testing</li>
+            <li>Deployment</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Call of action-->     
+<section class="cta-section">
+  <div class="cta-overlay"></div>
+
+  <div class="cta-content">
+    <h3>Call To Action</h3>
+    <p>
+      Pain should not be taken seriously in the pursuit of pleasure, and no one should suffer for it unnecessarily.
+    </p>
+    <a href="#" class="cta-btn">Call To Action</a>
+  </div>
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section class="py-5" id="portfolio">
+  <div class="container">
+    <div class="section-title"><h2>Portfolio</h2></div>
+    
+    <!-- Filter Buttons -->
+    <div class="text-center mb-4 portfolio-filters">
+      <button class="btn btn-outline-main active" data-filter="all">All</button>
+      <button class="btn btn-outline-main" data-filter="app">App</button>
+      <button class="btn btn-outline-main" data-filter="card">Card</button>
+      <button class="btn btn-outline-main" data-filter="web">Web</button>
+
+
+<!-- Portfolio Grid -->
+<div class="row g-4 portfolio-grid">
+
+
+  <!-- App Project 1 -->
+  <div class="col-lg-4 col-md-6 portfolio-item app position-relative">
+    <div class="portfolio-wrap">
+      <img src="app project1.jpg" class="img-fluid rounded" alt="App 1">
+
+      <div class="portfolio-overlay">
+        <div class="portfolio-info">
+          <h4>App 1</h4>
+          <p>Mobile Application</p>
+
+          <div class="portfolio-actions">
+            <a href="product-page.html"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://via.placeholder.com/700x400?text=App+1"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Project 2 -->
+  <div class="col-lg-8 col-md-6 portfolio-item app position-relative">
+    <div class="portfolio-wrap">
+      <img src="app project2.jpg" class="img-fluid rounded" alt="App 2">
+
+      <div class="portfolio-overlay">
+        <div class="portfolio-info">
+          <h4>App 2</h4>
+          <p>Corporate Application</p>
+
+          <div class="portfolio-actions">
+            <a href="product-page.html"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://via.placeholder.com/1000x600?text=App+2"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Project 1 -->
+  <div class="col-lg-6 col-md-6 portfolio-item card position-relative">
+    <div class="portfolio-wrap">
+      <img src="card project1.jpg" class="img-fluid rounded" alt="Card 1">
+
+      <div class="portfolio-overlay">
+        <div class="portfolio-info">
+          <h4>Card Design</h4>
+          <p>UI Component</p>
+
+          <div class="portfolio-actions">
+            <a href="product-page.html"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://via.placeholder.com/1000x600?text=Card+1"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Project 2 -->
+  <div class="col-lg-6 col-md-6 portfolio-item card position-relative">
+    <div class="portfolio-wrap">
+      <img src="card project2.jpg" class="img-fluid rounded" alt="Card 2">
+
+      <div class="portfolio-overlay">
+        <div class="portfolio-info">
+          <h4>Card Layout</h4>
+          <p>Modern UI</p>
+
+          <div class="portfolio-actions">
+            <a href="product-page.html"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://via.placeholder.com/1000x600?text=Card+2"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Project 1 -->
+  <div class="col-lg-4 col-md-6 portfolio-item web position-relative">
+    <div class="portfolio-wrap">
+      <img src="web project1.jpg" class="img-fluid rounded" alt="Web 1">
+
+      <div class="portfolio-overlay">
+        <div class="portfolio-info">
+          <h4>Web Design</h4>
+          <p>Landing Page</p>
+
+          <div class="portfolio-actions">
+            <a href="product-page.html"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://via.placeholder.com/700x400?text=Web+1"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Project 2 -->
+  <div class="col-lg-8 col-md-6 portfolio-item web position-relative">
+    <div class="portfolio-wrap">
+      <img src="web project2.jpg" class="img-fluid rounded" alt="Web 2">
+
+      <div class="portfolio-overlay">
+        <div class="portfolio-info">
+          <h4>Corporate Website</h4>
+          <p>Business UI</p>
+
+          <div class="portfolio-actions">
+            <a href="product-page.html"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://via.placeholder.com/1000x600?text=Web+2"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          
+ 
+
+<!-- Team Section -->
+<section class="py-5 bg-light" id="team">
+  <div class="container">
+    <div class="section-title"><h2>Our Team</h2></div>
+    <div class="row g-4">
+
+      <!-- Team Member 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-card p-4 shadow-sm rounded text-center bg-white">
+          <img src="team member1.jpg" alt="Arjun Mehta" class="team-img mb-3">
+          <h5 class="team-name">Arjun Mehta</h5>
+          <p class="team-role">Human Resource Manager</p>
+          <p class="team-desc">It clarifies enjoyment and ease, and shows how it counters pain naturally.</p>
+          <div class="team-social">
+            <a href="#"><i class="bi bi-x-lg"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-card p-4 shadow-sm rounded text-center bg-white">
+          <img src="team member2.jpg" alt="Rohan Sharma" class="team-img mb-3">
+          <h5 class="team-name">Rohan Sharma</h5>
+          <p class="team-role">Team Leader</p>
+          <p class="team-desc">Focus on maximizing value while keeping tasks clear and simple.</p>
+          <div class="team-social">
+            <a href="#"><i class="bi bi-x-lg"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-card p-4 shadow-sm rounded text-center bg-white">
+          <img src="team member3.jpg" alt="Vikram Singh" class="team-img mb-3">
+          <h5 class="team-name">Vikram Singh</h5>
+          <p class="team-role">Marketing Manager</p>
+          <p class="team-desc">Anyone can easily avoid corrupted tasks or responsibilities when they choose to.</p>
+          <div class="team-social">
+            <a href="#"><i class="bi bi-x-lg"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-card p-4 shadow-sm rounded text-center bg-white">
+          <img src="team member4.jpg" alt="Rahul Desai" class="team-img mb-3">
+          <h5 class="team-name">Rahul Desai</h5>
+          <p class="team-role">Sales Executive</p>
+          <p class="team-desc">Challenges and burdens in tasks are unwelcome, and we address them.</p>
+          <div class="team-social">
+            <a href="#"><i class="bi bi-x-lg"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Pricing Section -->
+<!-- <section class="py-5" id="pricing">
+  <div class="container">
+    <div class="section-title"><h2>Pricing Plans</h2></div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card-box">
+          <h5>Basic</h5>
+          <h3>$49/mo</h3>
+          <ul class="list-unstyled">
+            <li>✔ Essential tools for day-to-day operations</li>
+            <li>✔ Standard analytics & reporting</li>
+            <li>✔ Email support during business hours</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Choose Plan</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <h5>Standard</h5>
+          <h3>$99/mo</h3>
+          <ul class="list-unstyled">
+            <li>✔ All basic features included</li>
+            <li>✔ Advanced analytics & performance insights</li>
+            <li>✔ Priority support & onboarding assistance</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Choose Plan</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <h5>Premium</h5>
+          <h3>$199/mo</h3>
+          <ul class="list-unstyled">
+            <li>✔ All standard features included</li>
+            <li>✔ Comprehensive enterprise solutions</li>
+            <li>✔ 24/7 dedicated account management</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Choose Plan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Testimonials Section -->
+<section class="py-5" id="testimonials">
+  <div class="container">
+    <div class="section-title"><h2>Testimonials</h2></div>
+    
+    <div class="testimonial-carousel position-relative">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-item active">
+        <img src="testimonial1.jpg" alt="Karan Patel" class="testimonial-img rounded-circle mb-3">
+        <p class="testimonial-text">"Zennia transformed our website into a modern, responsive platform that boosted our sales!"</p>
+        <h5 class="testimonial-name">Karan Patel</h5>
+        <p class="testimonial-role">Software Developer</p>
+        <div class="testimonial-rating">★★★★★</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-item">
+        <img src="testimonial2.jpg" alt="Amit Joshi" class="testimonial-img rounded-circle mb-3">
+        <p class="testimonial-text">"The team delivered beyond our expectations. Truly professional and creative."</p>
+        <h5 class="testimonial-name">Amit Joshi</h5>
+        <p class="testimonial-role">Marketing Head</p>
+        <div class="testimonial-rating">★★★★☆</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-item">
+        <img src="testimonial3.jpg" alt="Nikhil Rao" class="testimonial-img rounded-circle mb-3">
+        <p class="testimonial-text">"Excellent communication and flawless execution. Highly recommended!"</p>
+        <h5 class="testimonial-name">Nikhil Rao</h5>
+        <p class="testimonial-role">Product Manager</p>
+        <div class="testimonial-rating">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="testimonial-dots text-center mt-4">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="py-5" id="faq">
+  <div class="container">
+    <div class="section-title"><h2>Frequently Asked Questions</h2></div>
+
+    <div class="accordion" id="faqAccordion">
+      <!-- Question 1 -->
+      <div class="accordion-item mb-3 shadow-sm">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne">
+            01 How can I purchase a product from the website?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Simply click on the product link in the portfolio or product page and follow the checkout process.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="accordion-item mb-3 shadow-sm">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo">
+            02 What payment methods are accepted?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept credit/debit cards, UPI payments, and PayPal for secure transactions.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="accordion-item mb-3 shadow-sm">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree">
+            03 Can I track my order after purchase?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, once your order is confirmed, you will receive a tracking link via email or SMS.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="accordion-item mb-3 shadow-sm">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour">
+            04 What is the return policy?
+          </button>
+        </h2>
+        <div id="faqCollapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can return products within 15 days of delivery. Please refer to our Return Policy page for details.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Newsletter Section -->
+<section class="py-5" id="newsletter" style="background-color: #f3f5fa;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Text + Form -->
+      <div class="col-lg-6">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest products, offers, and news. Enter your email below and never miss out!</p>
+        <form class="d-flex mt-3">
+          <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="col-lg-6 text-center">
+        <img src="subscribe.png" class="img-fluid" alt="Girl pointing to subscribe">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog section-->
+<section class="blog-section" id="blog">
+  
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Blog Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="blog-date">DECEMBER 12</span>
+            <img src="blogpic1.jpg" alt="Blog 1">
+          </div>
+
+          <div class="blog-content">
+            <h4>Challenges are present, though responsibilities can sometimes be mitigated.</h4>
+
+            <div class="blog-meta">
+              <span>Julia Parker</span>
+              <span>/</span>
+              <span>Politics</span>
+            </div>
+
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="blog-date">JULY 17</span>
+            <img src="blogpic2.jpg" alt="Blog 2">
+          </div>
+
+          <div class="blog-content">
+            <h4>All challenges or disruptions should be addressed and mitigated.</h4>
+
+            <div class="blog-meta">
+              <span>Mario Douglas</span>
+              <span>/</span>
+              <span>Sports</span>
+            </div>
+
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="blog-date">SEPTEMBER 05</span>
+            <img src="blogpic3.jpg" alt="Blog 3">
+          </div>
+
+          <div class="blog-content">
+            <h4>This must be addressed, ensuring that accuracy and integrity are maintained.</h4>
+
+            <div class="blog-meta">
+              <span>Lisa Hunter</span>
+              <span>/</span>
+              <span>Economics</span>
+            </div>
+
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Stats -->
+<section class="stats">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3"><h3>150+</h3><p>Clients</p></div>
+      <div class="col-md-3"><h3>320+</h3><p>Projects</p></div>
+      <div class="col-md-3"><h3>24/7</h3><p>Support</p></div>
+      <div class="col-md-3"><h3>5★</h3><p>Rating</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <div class="section-title"><h2>Contact Us</h2></div>
+    <div class="row g-4 align-items-start">
+
+      <!-- Left: Info + Map -->
+      <div class="col-lg-6">
+        <div class="contact-info mb-3 p-3 shadow-sm rounded text-center">
+          <i class="bi bi-geo-alt-fill fs-3 contact-icon mb-2"></i>
+          <h6>Address</h6>
+          <p>Nagercoil, Tamil Nadu, India</p>
+        </div>
+        <div class="contact-info mb-3 p-3 shadow-sm rounded text-center">
+          <i class="bi bi-telephone-fill fs-3 contact-icon mb-2"></i>
+          <h6>Call Us</h6>
+          <p>+91 99947 09218</p>
+        </div>
+        <div class="contact-info mb-3 p-3 shadow-sm rounded text-center">
+          <i class="bi bi-envelope-fill fs-3 contact-icon mb-2"></i>
+          <h6>Email Us</h6>
+          <p>mail2subhavetti@gmail.com</p>
+        </div>
+        <div class="map-container mt-3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31106.123456789!2d77.56789!3d8.12345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05f0a1b2c3d4e5%3A0x123456789abcdef!2sNagercoil%2C+Tamil+Nadu%2C+India!5e0!3m2!1sen!2sus!4v1700000000000" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form (Letter Style) -->
+      <div class="col-lg-6">
+        <form class="row g-3">
+          <div class="col-12"><input type="text" class="form-control" placeholder="Your Name" required></div>
+          <div class="col-12"><input type="email" class="form-control" placeholder="Your Email" required></div>
+          <div class="col-12"><input type="text" class="form-control" placeholder="Subject" required></div>
+          <div class="col-12"><textarea class="form-control" rows="6" placeholder="Message" required></textarea></div>
+          <div class="col-12 text-center"><button type="submit" class="btn btn-main px-5">Submit</button></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   
+
+
+
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Corporate Website | Designed by You</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Link to external JS -->
+<script src="script.js"></script>
+</body>
+</html>
